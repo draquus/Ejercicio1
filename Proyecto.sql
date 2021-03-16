@@ -1,0 +1,28 @@
+DROP DATABASE IF EXISTS Proyecto;
+CREATE DATABASE Proyecto;
+USE Proyecto;
+
+CREATE TABLE Jugador (
+nombre TEXT NOT NULL,
+contraseña INTEGER NOT NULL,
+Identificador INTEGER  PRIMARY KEY NOT NULL 
+)ENGINE =InnoDB;
+
+CREATE TABLE Partida (
+  
+Identificador INTEGER  PRIMARY KEY NOT NULL,
+clasificacion INTEGER NOT NULL,
+fecha INTEGER NOT NULL,
+hora INTEGER NOT NULL,
+duracion INTEGER NOT NULL,
+ganador TEXT NOT NULL
+)ENGINE =InnoDB;
+
+INSERT INTO Jugador VALUES('Pol',1234,1);
+
+INSERT INTO Jugador VALUES('Christian',4567,2);
+
+INSERT INTO Jugador VALUES('Lluc',7891,3);
+
+INSERT INTO Partida VALUES(1,1,12/9/2021,2,1,'Pol');
+
